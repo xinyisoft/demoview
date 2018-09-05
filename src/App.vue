@@ -12,49 +12,6 @@
   }
 </script>
 
-<style>
-  .mu-main-view {
-    padding-top: 68px;
-  }
-
-  .mu-appbar-header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 101;
-    overflow: hidden;
-  }
-  .slide-left-enter-active,
-  .slide-left-leave-active,
-  .slide-right-enter-active,
-  .slide-right-leave-active {
-    transition: all 250ms;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    will-change: transform;
-  }
-
-  .slide-left-enter {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-
-  .slide-left-leave-active {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  .slide-right-enter {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  .slide-right-leave-active {
-    opacity: 0;
-    transform: translateX(100%);
-  }
+<style lang="less">
+  @import "assets/app";
 </style>

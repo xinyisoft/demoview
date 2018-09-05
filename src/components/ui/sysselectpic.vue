@@ -4,7 +4,7 @@
       <mu-button flat slot="left" @click="back">
         <mu-icon value="chevron_left"></mu-icon>
       </mu-button>
-      获取APPID
+      选择照片
     </mu-appbar>
     <div>
       <mu-card style="width: 100%;margin: 0 auto;">
@@ -34,7 +34,7 @@
 
 <script>
   export default {
-    name: 'getappid',
+    name: 'sysselectpic',
     methods: {
       back() {
         this.$router.back()

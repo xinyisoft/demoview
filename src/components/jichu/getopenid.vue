@@ -6,8 +6,8 @@
       </mu-button>
       获取OPENID
     </mu-appbar>
-    <mu-container>
-      <mu-card style="width: 100%; max-width: 375px; margin: 0 auto;">
+    <div>
+      <mu-card style="width: 100%; margin: 0 auto;">
         <mu-card-header title="Myron Avatar" sub-title="sub title">
           <mu-avatar slot="avatar">
             <img src="../../assets/images/avatar1.jpg">
@@ -28,7 +28,7 @@
           <mu-button flat>Action 2</mu-button>
         </mu-card-actions>
       </mu-card>
-    </mu-container>
+    </div>
   </mu-paper>
 </template>
 

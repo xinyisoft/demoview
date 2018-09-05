@@ -12,9 +12,20 @@ Vue.config.productionTip = false
 Vue.use(MuseUi)
 Vue.use(Toast)
 router.afterEach((to, from) => {
-  document.title = to.meta.title
+  document.title = to.meta.title;
+  console.log('test', to, from)
 })
+// 当前窗口得到焦点
+window.onfocus = function () {
+  console.log('window.foucs')
+  // 播放动画或视频
+}
 
+// 当前窗口失去焦点
+window.onblur = function () {
+  console.log('window.onblur')
+  // 暂停动画或视频
+}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
