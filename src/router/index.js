@@ -76,11 +76,15 @@ export default new Router({
         title: 'UI组件-选择照片',
         description: 'UI组件-选择照片',
         navigate: {
-          navigationBarBackgroundColor: '#ffffff',
-          navigationBarTextStyle: 'black',
-          navigationBarTitleText: '页面样式演示',
-          backgroundColor: '#eeeeee',
-          backgroundTextStyle: 'light'
+          navigationBarTextColor: '#ffffff',
+          navigationBarBackgroundColor: '#000',
+          navigationBarImmersedStatus: false,
+          navigationBarLoading: false,
+          navigationBarShow: true
+          // navigationBarTextStyle: 'black',
+          // navigationBarTitleText: '页面样式演示',
+          // backgroundColor: '#eeeeee',
+          // backgroundTextStyle: 'light'
         }
       }
     }

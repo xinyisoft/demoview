@@ -12,8 +12,42 @@ Vue.config.productionTip = false
 Vue.use(MuseUi)
 Vue.use(Toast)
 router.afterEach((to, from) => {
-  document.title = to.meta.title;
-  console.log('test', to, from)
+  document.title = to.meta.title
+  try {
+    if (to.meta.title) {
+      XY.setNavigationBarTitle({
+        title: to.meta.title
+      })
+    }
+    if (to.meta.navigate.navigationBarTextColor) {
+      XY.setNavigationBarTitleColor({
+        color: to.meta.navigate.navigationBarTextColor
+      })
+    }
+    if (to.meta.navigate.navigationBarBackgroundColor) {
+      XY.setNavigationBarColor({
+        color: to.meta.navigate.navigationBarBackgroundColor
+      })
+    }
+    if (to.meta.navigate.navigationBarImmersedStatus) {
+      XY.setImmersedStatusbar({
+        flag: to.meta.navigate.navigationBarImmersedStatus
+      })
+    }
+    if (to.meta.navigate.navigationBarLoading) {
+       XY.showNavigationBarLoading()
+    } else {
+       XY.hideNavigationBarLoading()
+    }
+    if (to.meta.navigate.navigationBarShow) {
+      XY.showNavigationBar()
+    } else {
+      XY.hideNavigationBar()
+    }
+  } catch (err) {
+
+  }
+  console.log('test1', to, from)
 })
 // 当前窗口得到焦点
 window.onfocus = function () {
