@@ -33,6 +33,15 @@ export default new Router({
       }
     },
     {
+      path: '/jichu/getxinyitoken',
+      name: 'getxinyitoken',
+      component: resolve => require([`@/components/jichu/getxinyitoken.vue`], resolve),
+      meta: {
+        title: '基础组件-获取xinyiToken',
+        description: '基础组件-获取xinyiToken'
+      }
+    },
+    {
       path: '/jichu/getsid',
       name: 'getsid',
       component: resolve => require([`@/components/jichu/getsid.vue`], resolve),

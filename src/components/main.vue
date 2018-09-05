@@ -65,6 +65,10 @@
               icon: 'folder',
               title: '获取SID',
               link: 'jichu/getsid'
+            }, {
+              icon: 'folder',
+              title: '获取XinyiToken',
+              link: 'jichu/getxinyitoken'
             }]
           },
           {
